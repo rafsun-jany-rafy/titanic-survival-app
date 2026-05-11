@@ -19,7 +19,7 @@ st.write('Enter passenger details to predict survival')
 with st.sidebar:
     st.header('About')
     st.write('This app predicts Titanic passenger survival using a Random Forest model.')
-    st.metric('Model Accuracy', '84%')  
+    st.metric('Model Accuracy', '85%')  
     
 if st.checkbox('Show Feature Importance'):
     importance = pd.DataFrame({
@@ -43,11 +43,11 @@ with col2:
     parch = st.number_input('Number of Parents/Children',0,10,0)
     fare = st.number_input('Fare', 0.0, 500.00, 8.05)
     embarked = st.selectbox('Port of Embarkation',
-                            ['Southampton','Cherbourg','Queenstown'])
+                            ['S = Southampton','C = Cherbourg','Q = Queenstown'])
 
 #Convert categorical inputs to numerical
 sex_encoded = 1 if sex == 'Female' else 0
-embarked_encoded =  {'Southampton':0,'Cherbourg':1,'Queenstown':2}[embarked]
+embarked_encoded =  {'S = Southampton':0,'C = Cherbourg':1,'Q = Queenstown':2}[embarked]
     
 #Prediction Button
 if st.button('Predict Survival', type='primary'):
