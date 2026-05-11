@@ -4,6 +4,12 @@ A Machine Learning web application that predicts whether a passenger would survi
 
 ---
 
+## 🌐 Live Demo
+
+[Click Here to Open the App](https://titanic-disaster-survival-app.streamlit.app/)
+
+---
+
 ## 📌 Project Overview
 
 This project uses a trained Machine Learning model to predict Titanic passenger survival probability. The application takes user inputs through a web interface and returns a prediction instantly.
@@ -122,7 +128,6 @@ This project can be deployed on:
 
 - Render
 - Railway
-- Streamlit Cloud
 - Hugging Face Spaces
 - Heroku
 
